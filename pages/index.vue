@@ -46,7 +46,7 @@ export default {
     },
     async getPlayers(search = '') {
       const perPage = this.perPage;
-      let results = await axios.get("api/players?q=" + search + "&perPage=" + perPage)
+      const results = await axios.get("api/players?q=" + search + "&perPage=" + perPage)
 
       if (results.data.id_match) {
         this.players = [results.data.data];
