@@ -26,10 +26,13 @@
 import axios from "~/plugins/axios"
 
 export default {
-  head: {
-    bodyAttrs: {
-      class: "bg-gray-200",
-    },
+  head() {
+    return {
+      title: 'Players | Gonzalo De Spírito',
+      bodyAttrs: {
+        class: "bg-gray-200",
+      }
+    }
   },
   data() {
     return {
